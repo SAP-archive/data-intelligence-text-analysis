@@ -1,0 +1,40 @@
+{
+    "description": "Lexicon Words",
+    "component": "com.sap.system.python3Operator",
+    "inports": [
+        {
+            "name": "lexicon",
+            "type": "message.DataFrame",
+            "description": "Message with body as  DataFrame."
+        },
+        {
+            "name": "table",
+            "type": "message.DataFrame",
+            "description": "Message with body as  DataFrame."
+        }
+    ],
+    "outports": [
+        {
+            "name": "log",
+            "type": "string",
+            "description": "Logging data"
+        },
+        {
+            "name": "data",
+            "type": "message.DataFrame",
+            "description": "Data after mapping lexicon"
+        }
+    ],
+    "config": {
+        "$type": "http://sap.com/vflow/textanalysis.word_lexicon.configSchema.json",
+        "script": "file://word_lexicon.py",
+        "debug_mode": true,
+        "language_filter": "None",
+        "word_types": "PROPN"
+    },
+    "tags": {
+        "sdi_utils": "",
+        "pandas": ""
+    },
+    "iconsrc": "lexicon.svg"
+}

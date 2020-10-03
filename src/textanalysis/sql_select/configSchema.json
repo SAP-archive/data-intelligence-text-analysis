@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://sap.com/vflow/textanalysis.sql_select.configSchema.json",
+    "type": "object",
+    "properties": {
+        "codelanguage": {
+            "type": "string"
+        },
+        "script": {
+            "type": "string"
+        },
+        "debug_mode": {
+            "title": "Debug mode",
+            "description": "Sending debug level information to log port",
+            "type": "boolean"
+        },
+        "columns": {
+            "title": "Columns to select",
+            "description": "Columns to select",
+            "type": "string"
+        },
+        "table_name": {
+            "title": "Table name",
+            "description": "Name of table",
+            "type": "string"
+        }
+    }
+}

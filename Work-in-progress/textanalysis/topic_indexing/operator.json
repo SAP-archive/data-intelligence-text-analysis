@@ -1,0 +1,34 @@
+{
+    "description": "Topic Frequency",
+    "component": "com.sap.system.python3Operator",
+    "inports": [
+        {
+            "name": "db",
+            "type": "message.table",
+            "description": "Message with body as table."
+        }
+    ],
+    "outports": [
+        {
+            "name": "log",
+            "type": "string",
+            "description": "Logging data"
+        },
+        {
+            "name": "data",
+            "type": "message",
+            "description": "Output List of dicts with word frequency"
+        }
+    ],
+    "config": {
+        "$type": "http://sap.com/vflow/textanalysis.topic_frequency.configSchema.json",
+        "script": "file://topic_frequency.py",
+        "debug_mode": true,
+        "tolerance": 1
+    },
+    "tags": {
+        "sdi_utils": "",
+        "pandas": ""
+    },
+    "iconsrc": "topic_frequency.svg"
+}

@@ -1,0 +1,28 @@
+{
+    "description": "sql select",
+    "component": "com.sap.system.python3Operator",
+    "inports": null,
+    "outports": [
+        {
+            "name": "log",
+            "type": "string",
+            "description": "Logging data"
+        },
+        {
+            "name": "data",
+            "type": "message",
+            "description": "sql statement"
+        }
+    ],
+    "config": {
+        "$type": "http://sap.com/vflow/textanalysis.sql_select.configSchema.json",
+        "script": "file://sql_select.py",
+        "debug_mode": true,
+        "columns": "\"ID\", \"TEXT_AS_NVARCHAR\" as \"TEXT\"",
+        "table_name": "\"${schema}\".\"bpanceditor.db::news.V_editorInbox_TextAs_nvarchar\" where \"ARTIFACT_TYPE\" not in ('NEWSTICKER')"
+    },
+    "tags": {
+        "sdi_utils": ""
+    },
+    "iconsrc": "sql_select.svg"
+}

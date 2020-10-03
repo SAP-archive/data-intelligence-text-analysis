@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://sap.com/vflow/textanalysis.text_words.configSchema.json",
+    "type": "object",
+    "properties": {
+        "codelanguage": {
+            "type": "string"
+        },
+        "script": {
+            "type": "string"
+        },
+        "debug_mode": {
+            "title": "Debug mode",
+            "description": "Sending debug level information to log port",
+            "type": "boolean"
+        },
+        "language": {
+            "title": "Language",
+            "description": "Filter for language of media.",
+            "type": "string"
+        },
+        "types": {
+            "title": "Types",
+            "description": "Define the kind of data extraction.",
+            "type": "string"
+        },
+        "entity_types": {
+            "title": "Entity types",
+            "description": "List of entity types",
+            "type": "string"
+        },
+        "max_word_len": {
+            "title": "Maximum word lenght",
+            "description": "Maximum word length.",
+            "type": "integer"
+        },
+        "min_word_len": {
+            "title": "Minimum word length",
+            "description": "Minimum word length.",
+            "type": "integer"
+        },
+        "sentiments": {
+            "title": "Do sentiment analysis using word list",
+            "description": "Do sentiment analysis using word list.",
+            "type": "boolean"
+        }
+    }
+}

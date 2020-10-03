@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://sap.com/vflow/textanalysis.word_frequency_sql.configSchema.json",
+    "type": "object",
+    "properties": {
+        "codelanguage": {
+            "type": "string"
+        },
+        "script": {
+            "type": "string"
+        },
+        "debug_mode": {
+            "title": "Debug mode",
+            "description": "Sending debug level information to log port",
+            "type": "boolean"
+        },
+        "language": {
+            "title": "Language filter",
+            "description": "Language filter",
+            "type": "string"
+        },
+        "type": {
+            "title": "Type filter",
+            "description": "Type filter",
+            "type": "string"
+        },
+        "min_count": {
+            "title": "Minimum count of words",
+            "description": "Minimum count of words",
+            "type": "integer"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "description": "Regex on Words",
+    "component": "com.sap.system.python3Operator",
+    "inports": [
+        {
+            "name": "words",
+            "type": "message.DataFrame",
+            "description": "Message table."
+        }
+    ],
+    "outports": [
+        {
+            "name": "log",
+            "type": "string",
+            "description": "Logging data"
+        },
+        {
+            "name": "removed",
+            "type": "message",
+            "description": "Removed words csv formatted"
+        },
+        {
+            "name": "data",
+            "type": "message.DataFrame",
+            "description": "Table after regex"
+        }
+    ],
+    "config": {
+        "$type": "http://sap.com/vflow/textanalysis.word_regex.configSchema.json",
+        "script": "file://word_regex.py",
+        "debug_mode": true,
+        "word_types": "PROPN",
+        "language_filter": "None",
+        "pattern_word_removal": "None",
+        "pattern_substring_replace": "None"
+    },
+    "tags": {
+        "sdi_utils": "",
+        "pandas": ""
+    },
+    "iconsrc": "word_regex.svg"
+}

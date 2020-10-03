@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://sap.com/vflow/textanalysis.topic_identification.configSchema.json",
+    "type": "object",
+    "properties": {
+        "codelanguage": {
+            "type": "string"
+        },
+        "script": {
+            "type": "string"
+        },
+        "debug_mode": {
+            "title": "Debug mode",
+            "description": "Sending debug level information to log port",
+            "type": "boolean"
+        },
+        "num_topics": {
+            "title": "Number of Topics",
+            "description": "Number of topics searched in provided articles.",
+            "type": "number"
+        },
+        "language_filter": {
+            "title": "Language Filter",
+            "description": "List of languages that should be processed",
+            "type": "string"
+        },
+        "topic_num_words": {
+            "title": "Number of words per topic",
+            "description": "Number of words per topic",
+            "type": "integer"
+        },
+        "word_type_filter": {
+            "title": "Word type filter",
+            "description": "Filter based on word types",
+            "type": "string"
+        }
+    }
+}

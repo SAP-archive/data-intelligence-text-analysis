@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://sap.com/vflow/textanalysis.doc_prepare.configSchema.json",
+    "type": "object",
+    "properties": {
+        "codelanguage": {
+            "type": "string"
+        },
+        "script": {
+            "type": "string"
+        },
+        "debug_mode": {
+            "title": "Debug mode",
+            "description": "Sending debug level information to log port",
+            "type": "boolean"
+        },
+        "text_column": {
+            "title": "TEXT Column",
+            "description": "Name of incoming text column",
+            "type": "string"
+        },
+        "id_column": {
+            "title": "ID Column",
+            "description": "Name of incoming id column",
+            "type": "string"
+        },
+        "language_column": {
+            "title": "Name of language column",
+            "description": "Name of language column in input data.",
+            "type": "string"
+        },
+        "default_language": {
+            "title": "Default language",
+            "description": "Default language of the texts",
+            "type": "string"
+        },
+        "remove_html_tags": {
+            "title": "Remove html tags",
+            "description": "Remove html tags from text",
+            "type": "boolean"
+        },
+        "media_docs": {
+            "title": "Media articles",
+            "description": "Name of media article determines language.",
+            "type": "boolean"
+        },
+        "pattern_substring_replace": {
+            "title": "Regular expression patterns for replacement",
+            "description": "Regular expression patterns for replacing substrings in text",
+            "type": "string"
+        }
+    }
+}

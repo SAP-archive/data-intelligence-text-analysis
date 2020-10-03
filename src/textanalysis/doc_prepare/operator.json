@@ -1,0 +1,39 @@
+{
+    "description": "Doc Prepare",
+    "component": "com.sap.system.python3Operator",
+    "inports": [
+        {
+            "name": "docs",
+            "type": "message.DataFrame",
+            "description": "Message table."
+        }
+    ],
+    "outports": [
+        {
+            "name": "log",
+            "type": "string",
+            "description": "Logging data"
+        },
+        {
+            "name": "data",
+            "type": "message.DataFrame",
+            "description": "Table with word index"
+        }
+    ],
+    "config": {
+        "$type": "http://sap.com/vflow/textanalysis.doc_prepare.configSchema.json",
+        "script": "file://doc_prepare.py",
+        "debug_mode": true,
+        "text_column": "text",
+        "id_column": "text_id",
+        "language_column": "language",
+        "default_language": "DE",
+        "remove_html_tags": false,
+        "media_docs": false,
+        "pattern_substring_replace": "'([\\:,\\.?!\\)])([A-Z])' : '\\1 \\2', '(,)([a-z])': '\\1 \\2', '(\\\"\\.)([A-Z])': '\\1 \\2', '(\\.)(\\\"[A-Z])': '\\1 \\2'"
+    },
+    "tags": {
+        "sdi_utils": ""
+    },
+    "iconsrc": "doc_prepare.svg"
+}

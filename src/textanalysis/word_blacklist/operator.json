@@ -1,0 +1,40 @@
+{
+    "description": "Remove Blacklisted Words",
+    "component": "com.sap.system.python3Operator",
+    "inports": [
+        {
+            "name": "blacklist",
+            "type": "message.list",
+            "description": "Message with body as dictionary."
+        },
+        {
+            "name": "table",
+            "type": "message.DataFrame",
+            "description": "Message with body as table."
+        }
+    ],
+    "outports": [
+        {
+            "name": "log",
+            "type": "string",
+            "description": "Logging data"
+        },
+        {
+            "name": "data",
+            "type": "message.DataFrame",
+            "description": "Message table after blacklist removals"
+        }
+    ],
+    "config": {
+        "$type": "http://sap.com/vflow/textanalysis.word_blacklist.configSchema.json",
+        "script": "file://word_blacklist.py",
+        "debug_mode": true,
+        "word_types": "PROPN",
+        "language_filter": "None"
+    },
+    "tags": {
+        "sdi_utils": "",
+        "pandas": ""
+    },
+    "iconsrc": "blacklist.svg"
+}

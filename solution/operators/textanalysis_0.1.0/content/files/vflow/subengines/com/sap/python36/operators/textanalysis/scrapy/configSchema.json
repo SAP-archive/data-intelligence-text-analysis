@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://sap.com/vflow/textanalysis.scrapy.configSchema.json",
+    "type": "object",
+    "properties": {
+        "codelanguage": {
+            "type": "string"
+        },
+        "script": {
+            "type": "string"
+        },
+        "debug_mode": {
+            "title": "Debug mode",
+            "description": "Sending debug level information to log port",
+            "type": "boolean"
+        },
+        "spider": {
+            "title": "Spider",
+            "description": "List of spiders for the command 'scrapy crawl <spider>'. Naming convention forspider = [media]_spider.py",
+            "type": "string"
+        },
+        "scrapy_dir": {
+            "title": "Scrapy directory",
+            "description": "Scrapy directory (absolute path)",
+            "type": "string"
+        },
+        "project_dir": {
+            "title": "Project Directory",
+            "description": "Scrapy project directory on container",
+            "type": "string"
+        }
+    }
+}

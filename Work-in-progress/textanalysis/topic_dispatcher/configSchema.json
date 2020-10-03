@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://sap.com/vflow/textanalysis.topic_dispatcher.configSchema.json",
+    "type": "object",
+    "properties": {
+        "codelanguage": {
+            "type": "string"
+        },
+        "script": {
+            "type": "string"
+        },
+        "debug_mode": {
+            "title": "Debug mode",
+            "description": "Sending debug level information to log port",
+            "type": "boolean"
+        },
+        "topic_table": {
+            "title": "Topic table",
+            "description": "Topic table on database",
+            "type": "string"
+        },
+        "table_colum": {
+            "title": "Table Column",
+            "description": "Table column of words",
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,136 @@
+Metadata-Version: 2.0
+Name: textblob-fr
+Version: 0.2.0
+Summary: French language support for TextBlob.
+Home-page: https://github.com/sloria/textblob-fr
+Author: Steven Loria
+Author-email: sloria1@gmail.com
+License: Copyright 2013 Steven Loria
+Requires-Dist: textblob (>=0.8.0)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+Description: ===========
+        textblob-fr
+        ===========
+        
+        .. image:: https://badge.fury.io/py/textblob-fr.png
+            :target: http://badge.fury.io/py/textblob-fr
+            :alt: Latest version
+        
+        .. image:: https://travis-ci.org/sloria/textblob-fr.png?branch=master
+            :target: https://travis-ci.org/sloria/textblob-fr
+            :alt: Travis-CI
+        
+        French language support for `TextBlob`_.
+        
+        Features
+        --------
+        
+        * Part-of-speech tagging (``PatternTagger``)
+        * Sentiment analysis (``PatternAnalyzer``)
+        * Supports Python 2 and 3
+        
+        Installing/Upgrading
+        --------------------
+        
+        If you have `pip <http://www.pip-installer.org/>`_ installed (you should), run ::
+        
+            $ pip install -U textblob
+            $ pip install -U textblob-fr
+        
+        Usage
+        -----
+        .. code-block:: python
+        
+            >>> from textblob import TextBlob
+            >>> from textblob_fr import PatternTagger, PatternAnalyzer
+            >>> text = u"Quelle belle matinée"
+            >>> blob = TextBlob(text, pos_tagger=PatternTagger(), analyzer=PatternAnalyzer())
+            >>> blob.tags
+            [(u'Quelle', u'DT'), (u'belle', u'JJ'), (u'matin\xe9e', u'NN')]
+            >>> blob.sentiment
+            (0.8, 0.8)
+        
+        Alternatively, you can use the ``Blobber`` class to avoid having to repeatedly pass the models into the ``TextBlob`` constructor.
+        
+        .. code-block:: python
+        
+            >>> from textblob import Blobber
+            >>> from textblob_fr import PatternTagger, PatternAnalyzer
+            >>> tb = Blobber(pos_tagger=PatternTagger(), analyzer=PatternAnalyzer())
+            >>> blob1 = tb(u"Quelle belle matinée")
+            >>> blob1.sentiment
+            (0.8, 0.8)
+            >>> blob2 = tb(u"C'est une voiture terribles.")
+            >>> blob2.sentiment
+            (-0.7, 0.6)
+            >>> blob1.analyzer is blob2.analyzer
+            True
+        
+        Requirements
+        ------------
+        
+        - Python >= 2.6 or >= 3.3
+        
+        TODO
+        ----
+        
+        - Tokenization
+        - Parsing
+        - NLTK tagging?
+        
+        License
+        -------
+        
+        MIT licensed. See the bundled `LICENSE <https://github.com/sloria/textblob-fr/blob/master/LICENSE>`_ file for more details.
+        
+        .. _TextBlob: https://textblob.readthedocs.org/
+        
+        
+        Changelog
+        ---------
+        
+        0.2.0 (10/27/2013)
+        ++++++++++++++++++
+        
+        * Compatibility with TextBlob>=0.8.0.
+        
+        0.1.0 (09/25/2013)
+        ++++++++++++++++++
+        
+        * First release
+        * Basically a thin, Py3-compatible wrapper around pattern.fr. Hooks to pattern's tagger and sentiment analyzer.
+        
+        
+        0.0.1 (09/22/2013)
+        ++++++++++++++++++
+        
+        * Experimental release.
+        
+Keywords: textblob_fr
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3

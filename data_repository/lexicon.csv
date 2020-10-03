@@ -1,0 +1,17 @@
+language,word,mapping,category
+DE,Corona,M,Pandemie
+DE,Covid,M,Pandemie
+DE,Pandemie,M,Pandemie
+DE,Virus,M,Pandemie
+DE,Krankenhaus,FM,Gesundheitsystem
+DE,Pflege,M,Gesundheitsystem
+DE,Gesund,M,Gesundheitsystem
+DE,BMG,M,Gesundheitsystem
+DE,Spahn,C,Jens Spahn
+DE,CDU,FM,Partei
+DE,CSU,FM,Partei
+DE,SPD,FM,Partei
+DE,FDP,FM,Partei
+DE,Grüne,FM,Partei
+DE,AFD,FM,Partei
+DE,AfD,FM,Partei

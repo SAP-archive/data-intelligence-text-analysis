@@ -1,0 +1,49 @@
+{
+    "description": "Text-Words",
+    "component": "com.sap.system.python3Operator",
+    "inports": [
+        {
+            "name": "sentimentlist",
+            "type": "message.DataFrame",
+            "description": "Sentiment list"
+        },
+        {
+            "name": "docs",
+            "type": "message.DataFrame",
+            "description": "Message with body as dictionary."
+        }
+    ],
+    "outports": [
+        {
+            "name": "log",
+            "type": "string",
+            "description": "Logging data"
+        },
+        {
+            "name": "sentiments",
+            "type": "message",
+            "description": "csv with sentiments"
+        },
+        {
+            "name": "data",
+            "type": "message.DataFrame",
+            "description": "Table with word index"
+        }
+    ],
+    "config": {
+        "$type": "http://sap.com/vflow/textanalysis.text_words.configSchema.json",
+        "script": "file://text_words.py",
+        "debug_mode": true,
+        "language": "None",
+        "types": "PROPN, NOUN",
+        "entity_types": "ORG, PER, LOC",
+        "max_word_len": 80,
+        "min_word_len": 3,
+        "sentiments": false
+    },
+    "tags": {
+        "sdi_utils": "",
+        "spacy": ""
+    },
+    "iconsrc": "text_words.svg"
+}

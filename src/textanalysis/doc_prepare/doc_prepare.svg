@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <rect x="162.305" y="113.273" width="162.821" height="219.298" style="fill: rgb(216, 216, 216); stroke: rgb(17, 17, 16); stroke-width: 12px;"/>
+  <rect y="137.014" width="132.536" height="8.953" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="177.836"/>
+  <rect y="204.985" width="132.536" height="8.953" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="177.836"/>
+  <rect y="181.947" width="132.536" height="8.953" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="177.601"/>
+  <rect y="159.234" width="132.536" height="8.953" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="177.836"/>
+  <rect y="228.129" width="132.536" height="8.953" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="177.43"/>
+  <rect y="251.565" width="132.536" height="8.953" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="177.958"/>
+  <rect y="275.365" width="132.536" height="8.953" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="177.978"/>
+  <rect y="296.898" width="132.536" height="8.953" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="177.836"/>
+  <line style="stroke: rgb(0, 0, 0);" x1="232.044" y1="232.723" x2="230.378" y2="234.804"/>
+  <line style="stroke: rgb(242, 190, 76);" x1="233.143" y1="234.937" x2="232.083" y2="232.964"/>
+  <ellipse style="stroke: rgb(109, 109, 109); stroke-width: 4px; fill: rgb(236, 236, 236);" cx="243.55" cy="377.232" rx="120.09" ry="25.025"/>
+  <ellipse style="stroke: rgb(109, 109, 109); stroke-width: 4px; fill-opacity: 0.65; fill: rgb(234, 234, 234);" cx="244.823" cy="66.665" rx="120.09" ry="25.025"/>
+  <line style="stroke: rgb(109, 108, 108); stroke-width: 4px;" x1="123.515" y1="377.48" x2="125.095" y2="65.769"/>
+  <line style="stroke: rgb(109, 108, 108); stroke-width: 4px;" x1="364.214" y1="379.737" x2="365.794" y2="68.026"/>
+  <path d="M 66.764 399.612 H 380.873 L 380.873 388.112 L 415.873 418.112 L 380.873 448.112 L 380.873 436.612 H 66.764 V 399.612 Z" style="fill: rgb(242, 190, 76);" transform="matrix(0.999917, 0.012853, -0.012853, 0.999917, 5.381793, 14.727699)" bx:shape="arrow 66.764 388.112 349.109 60 37 35 0 1@80c883dd"/>
+</svg>

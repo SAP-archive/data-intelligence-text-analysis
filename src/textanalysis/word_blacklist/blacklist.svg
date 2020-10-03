@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 182.434 314.928 H 234.133 V 389.129 H 337.529 V 426.229 H 234.133 V 500.429 H 182.434 V 426.229 H 79.038 V 389.129 H 182.434 Z" style="fill: rgb(159, 156, 156); stroke: rgb(218, 85, 85); stroke-width: 7px;" transform="matrix(0.90045, -0.434959, 0.953503, 0.64997, -347.800079, 209.114441)"/>
+  <rect x="134.293" y="19.796" width="195.097" height="255.384" style="fill: rgb(216, 216, 216); stroke: rgb(17, 17, 16); stroke-width: 12px;"/>
+  <rect y="47.444" width="158.809" height="10.426" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="152.903"/>
+  <rect y="126.599" width="158.809" height="10.426" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="152.903"/>
+  <rect y="99.77" width="158.809" height="10.426" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="152.621"/>
+  <rect y="73.32" width="158.809" height="10.426" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="152.903"/>
+  <rect y="153.552" width="158.809" height="10.426" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="152.417"/>
+  <rect y="180.844" width="158.809" height="10.426" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="153.049"/>
+  <rect y="208.561" width="158.809" height="10.426" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="153.073"/>
+  <rect y="233.637" width="158.809" height="10.426" style="stroke: rgb(13, 13, 12); fill: rgb(67, 66, 66);" x="152.903"/>
+  <line style="stroke: rgb(0, 0, 0);" x1="217.857" y1="158.902" x2="215.86" y2="161.325"/>
+  <line style="stroke: rgb(242, 190, 76);" x1="219.174" y1="161.48" x2="217.903" y2="159.182"/>
+</svg>

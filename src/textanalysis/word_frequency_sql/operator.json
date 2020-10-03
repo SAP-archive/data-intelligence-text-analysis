@@ -1,0 +1,35 @@
+{
+    "description": "Word frequency SQL",
+    "component": "com.sap.system.python3Operator",
+    "inports": [
+        {
+            "name": "articles",
+            "type": "message.*",
+            "description": "Trigger"
+        }
+    ],
+    "outports": [
+        {
+            "name": "log",
+            "type": "string",
+            "description": "Logging data"
+        },
+        {
+            "name": "sql",
+            "type": "string",
+            "description": "sql statement"
+        }
+    ],
+    "config": {
+        "$type": "http://sap.com/vflow/textanalysis.word_frequency_sql.configSchema.json",
+        "script": "file://word_frequency_sql.py",
+        "debug_mode": true,
+        "language": null,
+        "type": null,
+        "min_count": 1
+    },
+    "tags": {
+        "sdi_utils": ""
+    },
+    "iconsrc": "word_frequency.svg"
+}
