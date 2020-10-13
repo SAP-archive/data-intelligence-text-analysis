@@ -163,7 +163,7 @@ Have a look at the previous section: 'GitHub Structure'
 There are currently no know issues.
 
 ## How to obtain support
-This is an example code without any commitment for getting support. Nonetheless please contact me (thorsten.hapke@sap.com) if you have any questions or have run into an issue.
+This is an example code without any commitment for getting support. Please create an issue if you run into any or when having questions.
 
 ## Contributing
 This solution crucially depend on **scrapy** and **spacy**.
